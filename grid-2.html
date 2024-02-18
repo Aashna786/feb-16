@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @media screen and (min-width: 200px) and (max-width: 400px) {
+        .gf {
+          border: 2px solid black;
+          display: grid;
+          grid-template-columns: auto;
+          background-color: blueviolet;
+          justify-content: center;
+          row-gap: 10px;
+          height: 300px;
+        }
+        .cd {
+          display: grid;
+          justify-content: center;
+          background-color: aqua;
+          width: 200px;
+          border: 2px solid deeppink;
+          height: 30px;
+          align-items: center;
+          font-weight: bold;
+          font-size: 20px;
+        }
+      }
+      @media screen and (min-width: 401px) and (max-width: 700px) {
+        .gf {
+          border: 2px solid black;
+          height: 400px;
+          background-color: gray;
+          display: grid;
+          justify-content: center;
+          grid-template-columns: repeat(4, 100px);
+          gap: 10px;
+        }
+        .cd {
+          border: 1px solid;
+          background-color: deeppink;
+          font-weight: bold;
+          font-size: 20px;
+        }
+        .cd1 {
+          grid-row-start: 1;
+          grid-row-end: 6;
+        }
+        .cd2 {
+          grid-column-start: 2;
+          grid-column-end: 6;
+          grid-row-start: 1;
+          grid-row-end: 3;
+        }
+        .cd3 {
+          grid-column-start: 3;
+          grid-row-start: 3;
+          grid-row-end: 6;
+        }
+        .cd4 {
+          grid-row-start: 3;
+          grid-row-end: 6;
+        }
+        .cd5 {
+          grid-column-start: 4;
+          grid-row-start: 3;
+          grid-row-end: 6;
+        }
+      }
+      /* @media screen and (min-width:701px) and (max-width:1000px){
+        .container {
+          display: grid;
+          grid-template-columns: repeat(3, 200px);
+          grid-template-rows: repeat(3, 80px);
+        }
+        .c1 {
+          background-color: chartreuse;
+          border: 2px solid deeppink;
+          display: grid;
+          justify-content: center;
+          align-items: center;
+          font-size: 30px;
+          font-weight: bold;
+        }
+        .cd1 {
+          grid-column-start: 1;
+          grid-column-end: 6;
+        }
+        .cd2 {
+          grid-row-start: 2;
+          grid-row-end: 6;
+          grid-column-start: 1;
+        }
+        .cd3{
+          grid-row-start: 2;
+          grid-row-end: 3;
+          grid-column-start: 2;
+          grid-column-end: 4;
+        }
+        .cd4{
+          grid-row-start: 2;
+          grid-row-end: 3;
+          grid-column-start: 4;
+          grid-column-end: 6;
+        }
+        .cd5 {
+          grid-row-start: 3;
+          grid-row-end: 6;
+          grid-column-start: 2;
+          grid-column-end: 6;
+        }
+      }
+     */
+      @media screen and (min-width: 701px) and (max-width: 1000px) {
+        /* .gf {
+          display: grid;
+          border: 2px solid pink;
+          height: 500px;
+          background-color: blue;
+          display: grid;
+        } */
+
+        .gf {
+          border: 2px solid red;
+          background-color: yellowgreen;
+          display: grid;
+          text-align: center;
+          height: 200px;
+        }
+        .cd {
+          background-color:chartreuse;
+          border: 2px solid black;
+        }
+        .cd1 {
+          grid-column-start: 1;
+          grid-column-end: 6;
+        }
+        .cd2 {
+          grid-row-start: 2;
+          grid-row-end: 6;
+          grid-column-start: 1;
+        }
+        .cd3 {
+          grid-row-start: 2;
+          /* grid-row-end: ; */
+          grid-column-start: 2;
+          grid-column-end: 4;
+        }
+        .cd4 {
+          grid-row-start: 2;
+          /* grid-row-end: 3; */
+          grid-column-start: 4;
+          grid-column-end: 6;
+        }
+        .cd5 {
+          grid-row-start: 3;
+          grid-row-end: 6;
+          grid-column-start: 2;
+          grid-column-end: 6;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="gf">
+      <div class="cd cd1">one</div>
+      <div class="cd cd2">two</div>
+      <div class="cd cd3">three</div>
+      <div class="cd cd4">four</div>
+      <div class="cd cd5">five</div>
+      <!-- <div class="cd cd5">six</div> -->
+    </div>
+  </body>
+</html>
